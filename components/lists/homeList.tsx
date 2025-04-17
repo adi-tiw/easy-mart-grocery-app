@@ -39,7 +39,7 @@ const Item = ({item}: ItemProps) => (
   );
 export default function HomeList({selectedCategory} : HomeListProps) {
 
-      const {data , isPending , isError} = useQuery({
+      const {data , isPending , isError} = useQuery<ItemData[]>({
           queryKey: ['FetchProductData'],
           queryFn: RetrieveItemData,
         });
