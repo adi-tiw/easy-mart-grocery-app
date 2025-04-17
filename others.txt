@@ -1,0 +1,19 @@
+    const [emailInput , setEmailInput] = useState<String>('');
+    const [passwordInput , setPasswordInput] = useState<String>('');
+    
+    const userCredentials = {
+        email: emailInput,
+        password: passwordInput,
+    }
+
+            finally{
+        alert('Entered Credentials' + JSON.stringify(userCredentials , null , 1))
+        }
+
+type UserProfileData = {
+    id: number;
+    name: string;
+    id_number: number;
+    role: string;
+    cart_id: number;
+}
