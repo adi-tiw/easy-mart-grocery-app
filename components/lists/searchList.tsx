@@ -36,7 +36,7 @@ const Item = ({item}: ItemProps) => (
   );
 export default function SmallList({searchInput} : SearchItem) {
 
-  const {data , isPending , isError} = useQuery({
+  const {data , isPending , isError} = useQuery<ItemData[]>({
     queryKey: ['FethProductData'],
     queryFn: RetrieveItemData,
   });
